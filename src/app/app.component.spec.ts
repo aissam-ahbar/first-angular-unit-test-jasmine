@@ -5,16 +5,18 @@ import { AppComponent } from './app.component';
 describe('[App.displayHello(name)]', () => {
   // ARRANGE STEP : Setup dependencies & create your component (TestBed).
   beforeEach(async () => {
+    // Load dependencies
     await TestBed.configureTestingModule({
-      declarations: [AppComponent], // Dependency
+      declarations: [AppComponent],
     }).compileComponents();
+
+    // Create the component fixture that allows to inspect the component
+    const fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.componentInstance;
   });
 
   // Unit Test 1
   it(`given valid name not empty, should return Hello with name'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-
     // ASSERT STEP: Check your code matches your expectations
     const expected = 'Hello Aissam';
     const name = 'Aissam';
