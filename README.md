@@ -1,3 +1,13 @@
-# first-angular-unit-test-jasmine
+# Angular Unit Test with Jasmine
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-tem5f6)
+## Run the tests
+
+```
+ng test
+```
+
+## Run tests with code coverage
+
+```
+ng test --code-coverage
+```
