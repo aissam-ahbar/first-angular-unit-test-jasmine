@@ -1,16 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
-  name = '';
-
-  ngOnInit() {
-    this.displayHello(this.name);
+export class AppComponent {
+  /**
+   * Displays a name
+   * @param name The name of the user
+   */
+  public displayHello(name: string) {
+    const myName = name || '';
+    return 'Hello ' + myName;
   }
-
-  private displayHello(name: string) {}
 }
