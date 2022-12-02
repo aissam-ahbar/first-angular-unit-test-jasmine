@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
+describe('App#displayHello Test Suite', () => {
   // ARRANGE STEP : Setup dependencies & create your component (TestBed).
   beforeEach(async () => {
     await TestBed.configureTestingModule({
