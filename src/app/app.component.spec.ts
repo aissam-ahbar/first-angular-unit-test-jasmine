@@ -20,7 +20,7 @@ describe('[App.displayHello(name)]', () => {
     // ASSERT STEP: Check your code matches your expectations
     const expected = 'Hello Aissam';
     const name = 'Aissam';
-    const res = app.displayHello(name);
+    const res = component.displayHello(name);
     expect(res).toEqual(expected);
   });
 
