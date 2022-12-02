@@ -6,7 +6,7 @@ describe('[App.displayHello(name)]', () => {
   // ARRANGE STEP : Setup dependencies & create your component (TestBed).
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      declarations: [AppComponent], // Dependency
     }).compileComponents();
   });
 
