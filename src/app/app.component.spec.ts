@@ -1,8 +1,11 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 // Test Suite
 describe('[App.displayHello(name)]', () => {
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
   // ARRANGE STEP : Setup dependencies & create your component (TestBed).
   beforeEach(async () => {
     // Load dependencies
@@ -11,8 +14,8 @@ describe('[App.displayHello(name)]', () => {
     }).compileComponents();
 
     // Create the component fixture that allows to inspect the component
-    const fixture = TestBed.createComponent(AppComponent);
-    const component = fixture.componentInstance;
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
   });
 
   // Unit Test 1
