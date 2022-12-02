@@ -15,7 +15,8 @@ describe('AppComponent', () => {
 
     // ASSERT STEP: Check your code matches your expectations
     const expected = 'Hello Aissam';
-    const res = app.displayHello(expected);
+    const name = 'Aissam';
+    const res = app.displayHello(name);
     expect(res).toEqual(expected);
   });
 });
