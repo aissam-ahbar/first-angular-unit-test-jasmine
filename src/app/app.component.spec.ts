@@ -19,4 +19,14 @@ describe('App#displayHello Test Suite', () => {
     const res = app.displayHello(name);
     expect(res).toEqual(expected);
   });
+
+  it(`given empty name, should return just Hello'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+
+    const expected = 'Hello';
+    const name = '';
+    const res = app.displayHello(name).trim();
+    expect(res).toEqual(expected);
+  });
 });

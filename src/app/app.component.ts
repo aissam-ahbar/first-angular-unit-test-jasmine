@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  /**
-   * Displays a name
-   * @param name The name of the user
-   */
   public displayHello(name: string) {
     const myName = name || '';
     return 'Hello ' + myName;
