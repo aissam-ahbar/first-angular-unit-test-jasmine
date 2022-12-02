@@ -26,12 +26,9 @@ describe('[App.displayHello(name)]', () => {
 
   // Unit Test 2
   it(`given empty name, should return just 'Hello''`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-
     const expected = 'Hello';
     const name = '';
-    const res = app.displayHello(name).trim();
+    const res = component.displayHello(name).trim();
     expect(res).toEqual(expected);
   });
 });
