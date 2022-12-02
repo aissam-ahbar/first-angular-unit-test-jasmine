@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 
 // Test Suite
 describe('[App.displayHello(name)]', () => {
+  // Component Under Test
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
