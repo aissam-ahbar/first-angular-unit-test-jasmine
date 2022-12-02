@@ -1,7 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('App#displayHello Test Suite', () => {
+// Test Suite
+describe('[App.displayHello(name)]', () => {
   // ARRANGE STEP : Setup dependencies & create your component (TestBed).
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -9,7 +10,8 @@ describe('App#displayHello Test Suite', () => {
     }).compileComponents();
   });
 
-  it(`given valid name, should return Hello with name'`, () => {
+  // Unit Test 1
+  it(`given valid name not empty, should return Hello with name'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
 
@@ -20,7 +22,8 @@ describe('App#displayHello Test Suite', () => {
     expect(res).toEqual(expected);
   });
 
-  it(`given empty name, should return just Hello'`, () => {
+  // Unit Test 2
+  it(`given empty name, should return just 'Hello''`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
 
